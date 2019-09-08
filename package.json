@@ -1,0 +1,34 @@
+{
+  "name": "interview-coding-test-compara",
+  "version": "1.0.0",
+  "description": "ComparaOnline Software Engineer Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bysouleater/interview-coding-test-compara.git"
+  },
+  "keywords": [
+    "comparaonline",
+    "test",
+    "software",
+    "engineer"
+  ],
+  "author": "Nahuel Balsamo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bysouleater/interview-coding-test-compara/issues"
+  },
+  "homepage": "https://github.com/bysouleater/interview-coding-test-compara#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
