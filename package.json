@@ -4,7 +4,7 @@
   "description": "ComparaOnline Software Engineer Test",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec/*.js"
+    "test": "nyc mocha src/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-plugin-import": "^2.18.2",
+    "nyc": "^14.1.1"
   }
 }
