@@ -15,7 +15,13 @@ class Product {
   }
 
   updatePrice() {
-    this.price = Math.max(0, this.price - (this.sellIn >= 0 ? 1 : 2));
+    this.price = Math.min(50,
+      Math.max(0, this.price + this.priceFactor() * (this.sellIn >= 0 ? 1 : 2)));
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  priceFactor() {
+    return -1;
   }
 }
 
