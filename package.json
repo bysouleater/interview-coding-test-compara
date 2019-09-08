@@ -2,9 +2,10 @@
   "name": "interview-coding-test-compara",
   "version": "1.0.0",
   "description": "ComparaOnline Software Engineer Test",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "nyc mocha src/**/*.spec.js"
+    "test": "nyc mocha --file src/setupTests.js src/**/*.spec.js",
+    "after-30-days": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,14 +23,14 @@
     "url": "https://github.com/bysouleater/interview-coding-test-compara/issues"
   },
   "homepage": "https://github.com/bysouleater/interview-coding-test-compara#readme",
-  "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^4.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.0",
     "nyc": "^14.1.1"
   }
 }
