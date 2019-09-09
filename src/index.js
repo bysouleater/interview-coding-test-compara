@@ -3,6 +3,7 @@ const IncreasingPriceProduct = require('./models/IncreasingPriceProduct');
 const CarInsurance = require('./models/CarInsurance');
 const LegendaryProduct = require('./models/LegendaryProduct');
 const SpecialProduct = require('./models/SpecialProduct');
+const FastDecreasingPriceProduct = require('./models/FastDecreasingPriceProduct');
 
 const productsAtDayZero = [
   new Product('Medium Coverage', 10, 20),
@@ -13,7 +14,7 @@ const productsAtDayZero = [
   new SpecialProduct('Special Full Coverage', 15, 20),
   new SpecialProduct('Special Full Coverage', 10, 49),
   new SpecialProduct('Special Full Coverage', 5, 49),
-  new Product('Super Sale', 3, 6),
+  new FastDecreasingPriceProduct('Super Sale', 3, 6),
 ];
 
 const carInsurance = new CarInsurance(productsAtDayZero);
